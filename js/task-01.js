@@ -6,5 +6,3 @@ listOfCategories.forEach(function (number) {
   console.log(`Category: ${number.firstElementChild.textContent}`);
   console.log(`Elements: ${number.lastElementChild.children.length}`);
 });
-
-// Решено++++++++++++++++++++++++++++++++++++++++

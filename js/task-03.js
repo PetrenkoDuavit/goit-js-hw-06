@@ -30,5 +30,3 @@ galleryListEl.style.cssText = `display: flex;
   margin: 0;
   padding: 0;
   `;
-
-// Решено-+-+-+-+------=====---___++++------===_____

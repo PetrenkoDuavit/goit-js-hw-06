@@ -18,13 +18,3 @@ for (let ingredient of ingredients) {
   ulEl.appendChild(liEl);
 }
 document.body.appendChild(ulEl);
-
-// Решено++++++++++++++++++++++++++++++++++++++++
-
-// const markup = ingredients
-//   .map((ingredient) => `<li>&{ingredient}</li>`)
-//   .join("");
-
-// document.body.insertAdjacentElement("beforeend", `<ul>${markup}</ul>`);
-// // ulEl.appendChild(markup);
-// console.log(markup);

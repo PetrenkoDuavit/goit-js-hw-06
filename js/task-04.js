@@ -1,24 +1,16 @@
-// const myButtons = document.getElementById("counter");
-// console.log(myButtons);
-const ref = {
-  counterValue: 0,
+const refs = {
   counter: document.getElementById("value"),
-
   decr: document.querySelector("button[data-action='decrement']"),
   incr: document.querySelector("button[data-action='increment']"),
-  myValue: document.querySelector("#value"),
 };
 
-ref.decr.addEventListener("click", () => {
-  ref.counterValue--;
-  ref.counter.textContent = ref.counterValue;
-  //   console.log(`${ref.counterValue}`);
+let counterValue = 0;
+refs.decr.addEventListener("click", () => {
+  counterValue--;
+  refs.counter.textContent = counterValue;
 });
 
-ref.incr.addEventListener("click", () => {
-  ref.counterValue++;
-  ref.counter.textContent = ref.counterValue;
-  //   console.log(`${ref.counterValue}`);
+refs.incr.addEventListener("click", () => {
+  counterValue++;
+  refs.counter.textContent = counterValue;
 });
-
-// Решено+++++++++++++++++++++++++++++++++++++
