@@ -5,11 +5,14 @@ function onBlur(e) {
 
   const inputLength = Number(input1.dataset.length);
 
+  function checkValidInput(value1, value2) {
+    input1.classList.remove(value1);
+    input1.classList.add(value2);
+  }
+
   if (input1.value.length === inputLength) {
-    input1.classList.remove("invalid");
-    input1.classList.add("valid");
+    checkValidInput("invalid", "valid");
   } else {
-    input1.classList.remove("valid");
-    input1.classList.add("invalid");
+    checkValidInput("valid", "invalid");
   }
 }

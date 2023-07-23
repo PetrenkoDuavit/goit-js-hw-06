@@ -8,6 +8,7 @@ function checkSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
+    // Добавит "трим" что бы обрезать пробелы
     return alert("Please fill in all fields");
   }
 
